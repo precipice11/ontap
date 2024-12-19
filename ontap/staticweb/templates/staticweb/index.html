@@ -1,0 +1,67 @@
+{% extends "staticweb/layout.html" %}
+{% load static %}
+
+{% block body %}
+
+<div class="img-banner">
+    <img src="{% static 'staticweb/images/child.jpg' %}" alt="Banner Image">
+</div>
+
+<div class="sec">
+    <h1 id="ontap">OnTap</h1>
+  <h2>Fresh Drinking Water Locator</h2>
+  <p>Welcome to OnTap, the easiest way to find fresh drinking water fountains around you. Whether you're on the go, hiking, biking, or simply out for a walk, OnTap helps you locate the nearest public drinking fountains and water refill stations in your area.</p>
+  <img src="{% static 'staticweb/images/bottle.jpg' %}" alt="water bottle on beach">
+</div>
+
+<div class="sec">
+  <h2>Australia's First Drinking Fountain Locating Application</h2>
+  <p>OnTap is Australia's first mobile application designed to locate public drinking fountains, ensuring that clean and fresh water is always within reach. Say goodbye to plastic bottles and stay hydrated sustainably.</p>
+</div>
+
+<div class="sec">
+    <h2>The App</h2>
+    <p>OnTap provides users with a simple, intuitive, and efficient way to locate water fountains and refill stations. With its user-friendly interface, the app includes the following features:</p>
+  
+    <div id="index-imgs">
+        <div class="image-section">
+            <img src="{% static 'staticweb/images/nearme.png' %}" 
+                 alt="Near Me">
+            <h2>Real-time Fountain Locations</h2>
+            <p>Find drinking fountains near you in real-time, with information about their condition, accessibility, and user ratings.</p>
+        </div>
+        <div class="image-section">
+            <img src="{% static 'staticweb/images/map.png' %}" 
+                 alt="Map">
+            <h2>Map & List Views</h2>
+            <p>View fountains on an interactive map or list, sortable by proximity, condition rating, or name.</p>
+        </div>
+        <div class="image-section">
+            <img src="{% static 'staticweb/images/settings.png' %}" 
+                 alt="Settings">
+            <h2>Settings</h2>
+            <p>Customize app preferences, including notifications and map settings, to tailor your OnTap experience.</p>
+        </div>
+        <div class="image-section">
+            <img src="{% static 'staticweb/images/submitlocation.png' %}" 
+                 alt="Submit Location">
+            <h2>User Contributions</h2>
+            <p>Contribute by adding new water sources to the app for community benefit.</p>
+        </div>
+    </div>
+</div>
+
+<div class="sec">
+    <h2>and more...</h2>
+    <strong>User Reviews & Ratings:</strong> Read reviews and ratings from other users to find the cleanest and most reliable fountains.
+    <strong>Directions:</strong> Get directions to the nearest fountains using Apple Maps integration.
+    <strong>Accessibility Information:</strong> Check if the fountain is wheelchair accessible and safe for all users.
+</div>
+  
+<div class="sec">
+<h2>Download Now</h2>
+<p>Available for iOS. Stay hydrated, reduce plastic waste, and make a positive environmental impact with OnTap, your trusted source for fresh water!</p>
+</div>
+    
+  
+{% endblock %}

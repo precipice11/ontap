@@ -5,13 +5,13 @@
     <head>
         <title>{% block title %}OnTap{% endblock %}</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="{% static 'staticweb/styles.css' %}" rel="stylesheet">
+        <link href="{% static 'styles.css' %}" rel="stylesheet">
     </head>
     <body>
         <div class="content">
             <div id="header">
                 <div id="logo">
-                    <img src="{% static 'staticweb/images/logo.png' %}" alt="OnTap Logo" class="img-fluid">  
+                    <img src="{% static 'images/logo.png' %}" alt="OnTap Logo" class="img-fluid">  
                     <h1>OnTap</h1>   
                     <div>
                         {% if user.is_authenticated %}

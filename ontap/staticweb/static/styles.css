@@ -1,0 +1,156 @@
+/* Reset box-sizing */
+* {
+    box-sizing: border-box; /* Includes padding and borders in width/height */
+}
+
+/* Ensure no overflow in the body */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.img-banner {
+    position: relative;
+    width: 100%; /* Full width */
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+.img-banner img {
+    width: 100vw; /* 100% of the viewport width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    object-fit: cover; /* Covers the container */
+}
+
+#ontap {
+    font-size: 50px;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+div h2, h1, h3 {
+    padding: 20px;
+    font-weight: bold;
+}
+
+h2, h3 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+a {
+    color: black;
+}
+
+.sec {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto; /* Center section horizontally */
+    padding: 40px;
+    text-align: center;
+    max-width: 80%; /* Optional: limit width for better appearance */
+}
+
+.sec-a {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto; /* Center section horizontally */
+    padding: 40px;
+    text-align: center;
+    max-width: 80%; /* Optional: limit width for better appearance */
+    background-color: #ADD8E6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow */
+
+}
+
+.img-fluid {
+    width: 100px;
+    height: auto;
+}
+
+.sec img {
+    width: 100%; /* Adjust width as needed */
+    max-width: 1000px; /* Prevents it from getting too large */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Centers the image if margin is auto */
+    margin: 0 auto; /* Centers the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+
+#index-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px; /* Adjust space between image sections */
+}
+
+.image-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    align-items: center;
+    text-align: center;
+}
+
+.image-section img {
+    width: 250px; /* Adjust image size as needed */
+    height: auto;
+    border-radius: 20px; /* Rounded corners */
+    border: 5px solid black; /* Border width and color */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a soft shadow */
+    object-fit: contain; /* Ensures the image fits well */
+    background-color: white; /* Optional: Adds a frame background */
+}
+
+.image-section h1 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.image-section p {
+    font-size: 14px; /* Adjust description size */
+    color: #555; /* Light grey for description */
+    margin-top: 5px;
+}
+
+ul {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}

@@ -1,5 +1,4 @@
 from django.urls import path
-
 from . import views
 
 urlpatterns = [
@@ -13,3 +12,4 @@ urlpatterns = [
     path("updates/", views.updates, name="updates"),
 
 ]
+
